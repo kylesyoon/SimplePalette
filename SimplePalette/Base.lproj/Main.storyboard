@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,52 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap anywhere for a random color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFA-9r-jjc">
+                                <rect key="frame" x="180" y="289" width="241" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11442550505050508" green="0.11442550505050508" blue="0.11442550505050508" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="SFA-9r-jjc" secondAttribute="centerX" id="7mT-vb-BYY"/>
+                            <constraint firstAttribute="centerY" secondItem="SFA-9r-jjc" secondAttribute="centerY" id="YUG-qk-itR"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="aWQ-ej-eh5" appends="YES" id="2WL-r0-39m"/>
+                            <outletCollection property="gestureRecognizers" destination="Lpa-bP-ilx" appends="YES" id="baj-Z8-4L7"/>
+                            <outletCollection property="gestureRecognizers" destination="vj5-wR-KpS" appends="YES" id="ZIO-3E-UMB"/>
+                        </connections>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="centerLabel" destination="SFA-9r-jjc" id="1Mv-nj-7T3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aWQ-ej-eh5">
+                    <connections>
+                        <action selector="tappedView:" destination="BYZ-38-t0r" id="dYN-A3-YgQ"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="INB-Fq-KAa"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Lpa-bP-ilx">
+                    <connections>
+                        <action selector="longPressedView:" destination="BYZ-38-t0r" id="cjt-9w-Pbs"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="Wqh-Eo-Ocw"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pinchGestureRecognizer id="vj5-wR-KpS">
+                    <connections>
+                        <action selector="pinchedView:" destination="BYZ-38-t0r" id="ceH-2z-MRi"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="ig8-xg-4Pf"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="610" y="500"/>
         </scene>
     </scenes>
 </document>
