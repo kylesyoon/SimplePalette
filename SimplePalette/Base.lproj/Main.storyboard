@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -31,8 +31,8 @@
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="aWQ-ej-eh5" appends="YES" id="2WL-r0-39m"/>
-                            <outletCollection property="gestureRecognizers" destination="Lpa-bP-ilx" appends="YES" id="baj-Z8-4L7"/>
                             <outletCollection property="gestureRecognizers" destination="vj5-wR-KpS" appends="YES" id="ZIO-3E-UMB"/>
+                            <outletCollection property="gestureRecognizers" destination="VCW-7H-eJ8" appends="YES" id="1cp-sM-3K3"/>
                         </connections>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -47,18 +47,18 @@
                         <outlet property="delegate" destination="BYZ-38-t0r" id="INB-Fq-KAa"/>
                     </connections>
                 </tapGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Lpa-bP-ilx">
-                    <connections>
-                        <action selector="longPressedView:" destination="BYZ-38-t0r" id="cjt-9w-Pbs"/>
-                        <outlet property="delegate" destination="BYZ-38-t0r" id="Wqh-Eo-Ocw"/>
-                    </connections>
-                </pongPressGestureRecognizer>
                 <pinchGestureRecognizer id="vj5-wR-KpS">
                     <connections>
                         <action selector="pinchedView:" destination="BYZ-38-t0r" id="ceH-2z-MRi"/>
                         <outlet property="delegate" destination="BYZ-38-t0r" id="ig8-xg-4Pf"/>
                     </connections>
                 </pinchGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="VCW-7H-eJ8">
+                    <connections>
+                        <action selector="longPressed:" destination="BYZ-38-t0r" id="UkL-Ge-XjF"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="Tln-0i-k1x"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="610" y="500"/>
         </scene>

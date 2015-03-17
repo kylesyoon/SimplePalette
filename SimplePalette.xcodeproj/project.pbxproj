@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		516EA05E1AAA4A11002C4654 /* ColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 516EA05D1AAA4A11002C4654 /* ColorView.m */; };
 		51D97A6E1AAA21380037D898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D97A6D1AAA21380037D898 /* main.m */; };
 		51D97A711AAA21380037D898 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D97A701AAA21380037D898 /* AppDelegate.m */; };
 		51D97A741AAA21380037D898 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D97A731AAA21380037D898 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		516EA05C1AAA4A11002C4654 /* ColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorView.h; sourceTree = "<group>"; };
+		516EA05D1AAA4A11002C4654 /* ColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorView.m; sourceTree = "<group>"; };
 		51D97A681AAA21380037D898 /* SimplePalette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePalette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D97A6C1AAA21380037D898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51D97A6D1AAA21380037D898 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				51D97A701AAA21380037D898 /* AppDelegate.m */,
 				51D97A721AAA21380037D898 /* ViewController.h */,
 				51D97A731AAA21380037D898 /* ViewController.m */,
+				516EA05C1AAA4A11002C4654 /* ColorView.h */,
+				516EA05D1AAA4A11002C4654 /* ColorView.m */,
 				51D97A751AAA21380037D898 /* Main.storyboard */,
 				51D97A781AAA21380037D898 /* Images.xcassets */,
 				51D97A7A1AAA21380037D898 /* LaunchScreen.xib */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516EA05E1AAA4A11002C4654 /* ColorView.m in Sources */,
 				51D97A741AAA21380037D898 /* ViewController.m in Sources */,
 				51D97A711AAA21380037D898 /* AppDelegate.m in Sources */,
 				51D97A6E1AAA21380037D898 /* main.m in Sources */,
@@ -414,6 +420,7 @@
 				51D97A8D1AAA21380037D898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51D97A8E1AAA21380037D898 /* Build configuration list for PBXNativeTarget "SimplePaletteTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				51D97A901AAA21380037D898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
