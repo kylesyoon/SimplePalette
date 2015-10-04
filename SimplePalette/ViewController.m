@@ -14,17 +14,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *centerLabel;
 @property NSMutableArray *colorViews;
 
-@property UIView *shadeView;
-@property UIDynamicAnimator *dynamicAnimator;
-@property UICollisionBehavior *collisionBehavior;
-@property UIGravityBehavior *gravityBehavior;
-@property UIDynamicItemBehavior *dynamicItemBehavior;
-@property UIPushBehavior *pushBehavior;
 
 @end
 
 @implementation ViewController
-
+@synthesize colorViews,shadeView,dynamicAnimator,collisionBehavior,gravityBehavior,dynamicItemBehavior,pushBehavior;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
