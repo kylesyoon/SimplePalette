@@ -10,6 +10,14 @@
 
 @interface ViewController : UIViewController
 
+@property NSMutableArray *colorViews;
+
+@property UIView *shadeView;
+@property UIDynamicAnimator *dynamicAnimator;
+@property UICollisionBehavior *collisionBehavior;
+@property UIGravityBehavior *gravityBehavior;
+@property UIDynamicItemBehavior *dynamicItemBehavior;
+@property UIPushBehavior *pushBehavior;
 
 @end
 
